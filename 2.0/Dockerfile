@@ -1,3 +1,6 @@
 FROM microsoft/dotnet:2.0-sdk
 
-RUN curl https://releases.rancher.com/install-docker/1.12.sh | sh
+WORKDIR /
+
+COPY docker-install.sh .
+RUN chmod +x docker-install.sh && ./docker-install.sh
