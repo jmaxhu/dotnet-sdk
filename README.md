@@ -1,0 +1,1 @@
+dotnet core sdk container with docker installed.
